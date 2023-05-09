@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  gin-web
+  labels:
+    app:  gin-web
+    tier: service
+spec:
+  selector:
+    app:  gin-web
+  type:  NodePort
+  ports:
+  - name:  gin-web-port 
+    port:  9090
+    targetPort:  9090
