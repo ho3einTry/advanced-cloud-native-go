@@ -1,13 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name:  gin-web
+  name:  gin
   labels:
-    app:  gin-web
-    tier: service
+    app:  gin
 spec:
   selector:
-    app:  gin-web
+    app:  gin
   type:  NodePort
   ports:
   - name:  gin-web-port 
